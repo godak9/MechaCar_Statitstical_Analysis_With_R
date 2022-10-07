@@ -14,7 +14,7 @@ First, the production data was imported and read into R dataframes. Then, R buil
 4. **Study Design: MechaCar vs Competition**
   A statistical study was designed quantifying vehicle performance of the MechaCar vehicles against vehicles from other manufacturers.
 
-Results and a summary of results for each of the four parts of the analysis are found under the corresponding subheading in the "Analysis" section. The code referenced in the "Analysis" section can be found in the [R script file in this respository](MechaCarChallenge.R).
+Results and a summary of results for the first three parts of the analysis are found under the corresponding subheading in the "Analysis" section. The code referenced in the "Analysis" section can be found in the [R script file in this respository](MechaCarChallenge.R).
 
 # Analysis 
 ## Linear Regression to Predict MPG
@@ -112,14 +112,15 @@ The t-test results for a comparison with Manufacturing Lot 3:
 ![Lot3](https://user-images.githubusercontent.com/104794100/194493997-bdd4163a-6aeb-4d29-9440-87568ebeb7cc.png)
 
 ### Summary of Results
-The null hypothesis of a one-sample t-test proposes that there is no statistical difference between the observed sample mean and its presumed population mean. Assuming a significance level of 0.05, anything above would mean there is not sufficient evidence to reject the null.  
+The null hypothesis of a one-sample t-test proposes that there is no statistical difference between the observed sample mean and its presumed population mean. Assuming a significance level of 0.05, anything above would mean there is not sufficient evidence to reject the null hypothesis
 
 The t-test performed comparing the PSI across all manufacturing lots against the population mean produced a p-value of 0.06, therefore, there was failure to reject the null hypothesis was no statistical difference between the sample mean and the population mean of 1,500 PSI.
 
 The t-test performed comparing the PSI from Manufacturing Lot 1 against the population mean produced a p-value of 1, therefore, there was failure to reject the null hypothesis was no statistical difference between the sample mean and the population mean of 1,500 PSI.
 
-The t-test performed comparing the PSI from manufacturing lot 2 against the population mean produced a p-value of 0.6, therefore, there was failure to reject the null hypothesis was no statistical difference between the sample mean and the population mean of 1,500 PSI.
+The t-test performed comparing the PSI from Manufacturing Lot 2 against the population mean produced a p-value of 0.6, therefore, there was failure to reject the null hypothesis was no statistical difference between the sample mean and the population mean of 1,500 PSI.
 
-The t-test performed comparing the PSI from manufacturing lot 2 against the population mean produced a p-value of 0.04, therefore, the null hypothesis was rejected and there was a statistical difference between the sample mean and the population mean of 1,500 PSI.
+The t-test performed comparing the PSI from Manufacturing Lot 3 against the population mean produced a p-value of 0.04, therefore, the null hypothesis was rejected and there was a statistical difference between the sample mean and the population mean of 1,500 PSI.
 
 ## Study Design: MechaCar vs Competition
+I suggest a statistical study be performed on the safety rating of the MechaCar to qunatify how it perfroms against the competition. For this type of analysis, safety rating data will need to be generated on all 50 prototypes of the MechaCar. Additionally, satefy rating data of a similar sample size would need to be gathered on a similar car from the competitors. Similarity could be based on body features of the two cars. I believe a paired t-test would be the best statistical test to use to show this comparison and potentially convince a customer to invest in the MechaCar over the competition. Since sample data will be taken from two different populations there would need to be evidence of statistical difference between thr true mean difference of the paired samples. This would be best quantified via a paired t-test. The null hypothesis in this analysis would be that the difference between paired observations is equal to zero meaning there is no difference in saftey rating between the two car types.
